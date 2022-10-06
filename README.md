@@ -1,13 +1,14 @@
 <h1>News Update</h1>
 
-News Update is a provide latest news feedds listing and notifications to user.
+News Update is provide latest news feeds list and notification.
 
 ## Architecture and Tech-stack
 
-* Target SDK Version - 28/29
+* Target SDK Version - 29
 * Minimum SDK version - 16
 * Built on MVP architecture pattern
-* Custom Network utility class,No OkHttp/Retrofit/Volly library are used.
+* Custom [NetworkUtility](https://github.com/rahulsinghfaujdar/NewsDetail/blob/main/app/src/main/java/com/newsdetail/network/NetworkAdapter.java)
+* Not used OkHttp/Gson/Retrofit/Volly
 * Uses [Glide](https://github.com/bumptech/glide) for image loading.
 * Uses Recycler View & Card View
 * Uses Constraint Layout
@@ -20,6 +21,12 @@ News Update is a provide latest news feedds listing and notifications to user.
 * Sorting according to publish date.
 * Day & Night Mode theme toggle selection available every time [Default Mode = Day Mode]
 * Provide In-App Browsing to read more details for specific news.
+
+##Firebase Push Data Payload Keys
+title = String          [News Title]
+description = String    [News Description]
+urlToImage = String     [News Image]
+url = String            [News Browsable Link]
 
 ## Screenshots
 <img src="https://github.com/rahulsinghfaujdar/NewsDetail/blob/main/screenshots/Screenshot_20221006_130541.png" width="25%"></img> <img src="https://github.com/rahulsinghfaujdar/NewsDetail/blob/main/screenshots/Screenshot_20221006_130620.png" width="25%"></img> <img src="https://github.com/rahulsinghfaujdar/NewsDetail/blob/main/screenshots/Screenshot_20221006_130653.png" width="25%"></img>
