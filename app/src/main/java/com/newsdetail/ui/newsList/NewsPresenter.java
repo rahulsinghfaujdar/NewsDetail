@@ -200,12 +200,7 @@ public class NewsPresenter implements NewsIntr.Presenter {
             //running a for loop to compare elements.
             for (ResNewsFeedModel item : resNewsFeedModelList) {
                 // checking if the entered string matched with any item of our recycler view.
-                if (item.getAuthor().toLowerCase().contains(text.toLowerCase())) {
-                    // if the item is matched then adding it to new filtered list.
-                    filteredlist.add(item);
-                } else if (item.getTitle().toLowerCase().contains(text.toLowerCase())) {
-                    filteredlist.add(item);
-                } else if (item.getContent().toLowerCase().contains(text.toLowerCase())) {
+                if (item.getTitle().toLowerCase().contains(text.toLowerCase())) {
                     filteredlist.add(item);
                 } else if (item.getDescription().toLowerCase().contains(text.toLowerCase())) {
                     filteredlist.add(item);
@@ -215,9 +210,14 @@ public class NewsPresenter implements NewsIntr.Presenter {
             }
             //check new filtered list contains matched items then update & notify recycler adapter
             if (!filteredlist.isEmpty()) {
+                mainView.hideProgress();
                 newsRecyclerAdapter.updatedData(filteredlist);
             }
+            else {
+                mainView.showError("");
+            }
         } else {
+            mainView.hideProgress();
             newsRecyclerAdapter.updatedData(resNewsFeedModelList);
         }
     }
