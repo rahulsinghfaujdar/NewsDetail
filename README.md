@@ -13,7 +13,7 @@ News Update is provide latest news feeds list and notification.
 * Uses Constraint Layout
 * Uses Custom Fonts
 * Uses Static API
-* Send Firebase Push Notification available [BigPictureStyle]
+* Send Firebase Push Notification available in [BigPictureStyle](https://github.com/rahulsinghfaujdar/NewsDetail/blob/main/app/src/main/java/com/newsdetail/utility/Firebase/NotificationTemplateUtility.java)
 
 ## Features
 * Searching on news listed items.
