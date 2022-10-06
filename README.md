@@ -3,7 +3,6 @@
 News Update is provide latest news feeds list and notification.
 
 ## Architecture and Tech-stack
-
 * Target SDK Version - 29
 * Minimum SDK version - 16
 * Built on MVP architecture pattern
@@ -22,11 +21,11 @@ News Update is provide latest news feeds list and notification.
 * Day & Night Mode theme toggle selection available every time [Default Mode = Day Mode]
 * Provide In-App Browsing to read more details for specific news.
 
-##Firebase Push Data Payload Keys
-title = String          [News Title]
-description = String    [News Description]
-urlToImage = String     [News Image]
-url = String            [News Browsable Link]
+## Firebase Push Data Payload Keys
+* title = String          [News Title]
+* description = String    [News Description]
+* urlToImage = String     [News Image]
+* url = String            [News Browsable Link]
 
 ## Screenshots
 <img src="https://github.com/rahulsinghfaujdar/NewsDetail/blob/main/screenshots/Screenshot_20221006_130541.png" width="25%"></img> <img src="https://github.com/rahulsinghfaujdar/NewsDetail/blob/main/screenshots/Screenshot_20221006_130620.png" width="25%"></img> <img src="https://github.com/rahulsinghfaujdar/NewsDetail/blob/main/screenshots/Screenshot_20221006_130653.png" width="25%"></img>
