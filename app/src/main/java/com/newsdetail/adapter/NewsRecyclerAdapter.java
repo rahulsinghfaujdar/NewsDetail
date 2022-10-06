@@ -49,7 +49,7 @@ public class NewsRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
         ResNewsFeedModel item = list.get(holder.getAdapterPosition());
         String formattedDate = CommonUtility.getFormattedDate(item.getPublishedAt(), GlobalConstants.INPUT_DATE_TIME_FORMAT, GlobalConstants.OUTPUT_DATE_TIME_FORMAT);
         myViewHolder.tvItem.setText("" + item.getTitle());
-        myViewHolder.tvSourceName.setText("Source :"+item.getSource().getName());
+        myViewHolder.tvSourceName.setText("Source : "+item.getSource().getName());
         myViewHolder.tvPublishAt.setText(formattedDate);
         myViewHolder.tvDescription.setText(item.getDescription());
         if (!TextUtils.isEmpty(item.getUrlToImage()))
