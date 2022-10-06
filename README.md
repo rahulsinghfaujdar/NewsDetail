@@ -11,7 +11,7 @@ News Update is provide latest news feeds list and notification.
 * Uses [Glide](https://github.com/bumptech/glide) for image loading.
 * Uses Recycler View & Card View
 * Uses Constraint Layout
-* Uses Custom Fonts
+* Uses Custom Fonts [Nunito](https://github.com/rahulsinghfaujdar/NewsDetail/tree/main/app/src/main/res/font)
 * Uses Static API
 * Send Firebase Push Notification available in [BigPictureStyle](https://github.com/rahulsinghfaujdar/NewsDetail/blob/main/app/src/main/java/com/newsdetail/utility/Firebase/NotificationTemplateUtility.java)
 
