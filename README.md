@@ -4,6 +4,8 @@ News Update is a provide latest news feedds listing and notifications to user.
 
 ## Architecture and Tech-stack
 
+* Target SDK Version - 28/29
+* Minimum SDK version - 16
 * Built on MVP architecture pattern
 * Custom Network utility class,No OkHttp/Retrofit/Volly library are used.
 * Uses [Glide](https://github.com/bumptech/glide) for image loading.
