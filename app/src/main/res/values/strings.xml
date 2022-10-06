@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">News Update</string>
+    <string name="error">No Data Found!!</string>
+
+    <!--Firebase-->
+    <string name="channel_id">Default</string>
+    <string name="channel_name">Default</string>
+</resources>
