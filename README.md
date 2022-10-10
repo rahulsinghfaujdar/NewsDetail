@@ -1,6 +1,6 @@
 ## <h4>News Update</h4>
 
-# News Update is provide latest news feeds list and notification.
+## News Update is provide latest news feeds list and notification.
 
 ### Architecture and Tech-stack
 * Target SDK Version - 29
