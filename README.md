@@ -1,6 +1,6 @@
-# <h4>News Update</h4>
+## <h4>News Update</h4>
 
-## News Update is provide latest news feeds list and notification.
+# News Update is provide latest news feeds list and notification.
 
 ### Architecture and Tech-stack
 * Target SDK Version - 29
@@ -26,8 +26,8 @@
 | --- | --- | --- |
 | `title` | `String` | **(required)**  News Title
 | `description` | `String` | **(required)**  News Description 
-| `urlToImage` | 'String' | **(required)**  News Image
-| `url` | 'String' | **(required)**  News Browsable Link
+| `urlToImage` | `String` | **(required)**  News Image
+| `url` | `String` | **(required)**  News Browsable Link
 
 ### Screenshots
 <img src="https://github.com/rahulsinghfaujdar/NewsDetail/blob/main/screenshots/Screenshot_20221006_130541.png" width="25%"></img> <img src="https://github.com/rahulsinghfaujdar/NewsDetail/blob/main/screenshots/Screenshot_20221006_130620.png" width="25%"></img> <img src="https://github.com/rahulsinghfaujdar/NewsDetail/blob/main/screenshots/Screenshot_20221006_130653.png" width="25%"></img>
