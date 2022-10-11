@@ -1,6 +1,6 @@
 buildscript {
     dependencies {
-        classpath 'com.google.gms:google-services:4.3.14'
+        classpath libs.google.services
     }
     repositories {
         google()
@@ -8,8 +8,8 @@ buildscript {
 }
 
 plugins {
-    id 'com.android.application' version '7.2.1' apply false
-    id 'com.android.library' version '7.2.1' apply false
+    alias(libs.plugins.androidApplication).apply(false)
+    alias(libs.plugins.androidLibrary).apply(false)
 }
 
 task clean(type: Delete) {
