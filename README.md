@@ -7,7 +7,7 @@
 * Minimum SDK version - 16
 * Built on MVP architecture pattern
 * TOML + Gradle version catalogs [TOML](https://funkymuse.dev/posts/toml-gradle)
-* Google Secrets Gradle plugin [Secrets](https://developers.google.com/maps/documentation/android-sdk/secrets-gradle-plugin,https://github.com/google/secrets-gradle-plugin)
+* Google Secrets Gradle plugin [Secrets](https://developers.google.com/maps/documentation/android-sdk/secrets-gradle-plugin)
 * Custom [NetworkUtility](https://github.com/rahulsinghfaujdar/NewsDetail/blob/main/app/src/main/java/com/newsdetail/network/NetworkAdapter.java)
 * Not used OkHttp/Gson/Retrofit/Volly
 * Uses [Glide](https://github.com/bumptech/glide) for image loading.
