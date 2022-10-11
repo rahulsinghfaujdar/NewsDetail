@@ -1,0 +1,44 @@
+#./gradlew versionCatalogUpdate
+
+[versions]
+gradlePlugins-agp = "7.2.1"
+googleServicesGMSVer = "4.3.14"
+junitTestVer = "4.13.2"
+junitTestAndroidVer = "1.1.3"
+espressoTestVer = "3.4.0"
+mavenBOMVer = "1.5.8.RELEASE"
+appcompatVer = "1.5.1"
+materialVer = "1.6.1"
+constraintlayoutVer = "2.1.4"
+recyclerviewVer = "1.2.1"
+cardviewVer = "1.0.0"
+swiperefreshlayoutVer = "1.1.0"
+firebaseBomVer = "28.4.1"
+glideVer = "4.12.0"
+
+[libraries]
+mavenBOM = {module = "org.springframework.boot:spring-boot-dependencies",version.ref = "mavenBOMVer"}       #https://docs.gradle.org/current/userguide/platforms.html#sub:bom_import
+appcompat = { module = "androidx.appcompat:appcompat",version.ref = "appcompatVer" }
+material = { module = "com.google.android.material:material",version.ref = "materialVer" }
+constraintlayout = { module = "androidx.constraintlayout:constraintlayout",version.ref = "constraintlayoutVer" }
+recyclerview = { module = "androidx.recyclerview:recyclerview",version.ref = "recyclerviewVer" }
+cardview = { module = "androidx.cardview:cardview",version.ref = "cardviewVer" }
+swiperefreshlayout = { module = "androidx.swiperefreshlayout:swiperefreshlayout",version.ref = "swiperefreshlayoutVer" }
+junit = { module = "junit:junit",version.ref = "junitTestVer" }
+junit-android = { module = "androidx.test.ext:junit",version.ref = "junitTestAndroidVer" }
+espresso = { module = "androidx.test.espresso:espresso-core",version.ref = "espressoTestVer" }
+glide = { module = "com.github.bumptech.glide:glide",version.ref = "glideVer" }
+glide-compile = { module = "com.github.bumptech.glide:compiler",version.ref = "glideVer" }
+firebase-bom = { module = "com.google.firebase:firebase-bom",version.ref = "firebaseBomVer" }
+firebase-messaging = { module = "com.google.firebase:firebase-messaging"}
+google-services = { module = "com.google.gms:google-services", version.ref = "googleServicesGMSVer"}
+
+[bundles]
+vendorLibs = ["appcompat","material","constraintlayout","recyclerview","cardview","swiperefreshlayout"]
+testImplementation = ["junit"]
+androidTestImplementation = ["junit","espresso"]
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "gradlePlugins-agp" }
+androidLibrary = { id = "com.android.library", version.ref = "gradlePlugins-agp" }
+androidApplicationPlugin = {id = "com.android.application"}
