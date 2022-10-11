@@ -6,6 +6,7 @@
 * Target SDK Version - 29
 * Minimum SDK version - 16
 * Built on MVP architecture pattern
+* TOML + Gradle version catalogs [TOML](https://funkymuse.dev/posts/toml-gradle)
 * Custom [NetworkUtility](https://github.com/rahulsinghfaujdar/NewsDetail/blob/main/app/src/main/java/com/newsdetail/network/NetworkAdapter.java)
 * Not used OkHttp/Gson/Retrofit/Volly
 * Uses [Glide](https://github.com/bumptech/glide) for image loading.
