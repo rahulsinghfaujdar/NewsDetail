@@ -7,12 +7,12 @@ import android.text.TextUtils;
 import androidx.appcompat.app.AppCompatDelegate;
 
 import com.newsdetail.BuildConfig;
-import com.newsdetail.network.NetworkAdapter;
 import com.newsdetail.adapter.NewsRecyclerAdapter;
 import com.newsdetail.constant.GlobalConstants;
 import com.newsdetail.constant.NetworkConst;
 import com.newsdetail.databinding.ActivityNewsBinding;
 import com.newsdetail.model.ResNewsFeedModel;
+import com.newsdetail.network.NetworkAdapter;
 import com.newsdetail.utility.CommonUtility;
 
 import org.json.JSONArray;
@@ -31,10 +31,10 @@ import java.util.concurrent.Executors;
  */
 public class NewsPresenter implements NewsIntr.Presenter {
 
-    // creating object of View Interface
-    private NewsIntr.View mainView;
     //Activity view
     private final ActivityNewsBinding activityNewsBinding;
+    // creating object of View Interface
+    private NewsIntr.View mainView;
     //sort toggle
     private boolean isSortByLatest = true;
     //dark mode toggle
@@ -49,12 +49,13 @@ public class NewsPresenter implements NewsIntr.Presenter {
 
     /**
      * get data from api
-     * @param newsRecyclerAdapter = Recycler Adapter object
+     *
+     * @param newsRecyclerAdapter  = Recycler Adapter object
      * @param resNewsFeedModelList = Data Model
-     * @param isRefresh = Boolean tag to refresh data
+     * @param isRefresh            = Boolean tag to refresh data
      */
     @Override
-    public void getLatestNewsByNetwork(NewsRecyclerAdapter newsRecyclerAdapter, List<ResNewsFeedModel> resNewsFeedModelList,boolean isRefresh) {
+    public void getLatestNewsByNetwork(NewsRecyclerAdapter newsRecyclerAdapter, List<ResNewsFeedModel> resNewsFeedModelList, boolean isRefresh) {
         ExecutorService executor = Executors.newSingleThreadExecutor();
         Handler handler = new Handler(Looper.getMainLooper());
 
@@ -76,7 +77,7 @@ public class NewsPresenter implements NewsIntr.Presenter {
                 NetworkAdapter.BaseResponseModel result = networkAdapter.enqueeApi();
 
                 //check response is not empty
-                if (result != null && result.getResponseCode()==200 && !TextUtils.isEmpty(result.getResponseMessage())) {
+                if (result != null && result.getResponseCode() == 200 && !TextUtils.isEmpty(result.getResponseMessage())) {
                     try {
                         //hold data from string to Json Object
                         JSONObject responseObject = new JSONObject(result.getResponseMessage());
@@ -106,22 +107,19 @@ public class NewsPresenter implements NewsIntr.Presenter {
                                         //add item in list
                                         resNewsFeedModelList.add(resNewsFeedModel);
                                     }
-                                    update(handler, newsRecyclerAdapter, resNewsFeedModelList,isRefresh);
-                                }
-                                else {
+                                    update(handler, newsRecyclerAdapter, resNewsFeedModelList, isRefresh);
+                                } else {
                                     mainView.showError("");
                                 }
                             }
-                        }
-                        else {
+                        } else {
                             mainView.showError("");
                         }
                     } catch (JSONException e) {
                         e.printStackTrace();
                         mainView.showError(result.getResponseMessage());
                     }
-                }
-                else {
+                } else {
                     mainView.showError(result.getResponseMessage());
                 }
             }
@@ -135,7 +133,7 @@ public class NewsPresenter implements NewsIntr.Presenter {
      * @param newsRecyclerAdapter
      * @param resNewsFeedModelList
      */
-    private void update(Handler handler, NewsRecyclerAdapter newsRecyclerAdapter, List<ResNewsFeedModel> resNewsFeedModelList,boolean isRefresh) {
+    private void update(Handler handler, NewsRecyclerAdapter newsRecyclerAdapter, List<ResNewsFeedModel> resNewsFeedModelList, boolean isRefresh) {
         handler.post(new Runnable() {
             @Override
             public void run() {
@@ -212,8 +210,7 @@ public class NewsPresenter implements NewsIntr.Presenter {
             if (!filteredlist.isEmpty()) {
                 mainView.hideProgress();
                 newsRecyclerAdapter.updatedData(filteredlist);
-            }
-            else {
+            } else {
                 mainView.showError("");
             }
         } else {
@@ -225,12 +222,10 @@ public class NewsPresenter implements NewsIntr.Presenter {
     //switch theme
     @Override
     public void switchTheme() {
-        if (isDarkMode)
-        {
+        if (isDarkMode) {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
             isDarkMode = false;
-        }
-        else {
+        } else {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
             isDarkMode = true;
         }
