@@ -3,6 +3,7 @@
 [versions]
 gradlePlugins-agp = "7.2.1"
 googleServicesGMSVer = "4.3.14"
+mapsplatformSecretsGradleVer = "2.0.1"
 junitTestVer = "4.13.2"
 junitTestAndroidVer = "1.1.3"
 espressoTestVer = "3.4.0"
@@ -41,4 +42,5 @@ androidTestImplementation = ["junit","espresso"]
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "gradlePlugins-agp" }
 androidLibrary = { id = "com.android.library", version.ref = "gradlePlugins-agp" }
+mapsplatformSecretsGradle = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "mapsplatformSecretsGradleVer" }
 androidApplicationPlugin = {id = "com.android.application"}
