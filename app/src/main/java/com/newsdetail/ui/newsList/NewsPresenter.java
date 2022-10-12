@@ -12,7 +12,7 @@ import com.newsdetail.constant.GlobalConstants;
 import com.newsdetail.constant.NetworkConst;
 import com.newsdetail.databinding.ActivityNewsBinding;
 import com.newsdetail.model.ResNewsFeedModel;
-import com.newsdetail.network.NetworkAdapter;
+import com.network.NetworkAdapter;
 import com.newsdetail.utility.CommonUtility;
 
 import org.json.JSONArray;
