@@ -1,0 +1,11 @@
+#./gradlew versionCatalogUpdate
+
+[versions]
+gradlePlugins-agp = "7.2.1"
+
+[libraries]
+
+[bundles]
+
+[plugins]
+androidLibrary = { id = "com.android.library", version.ref = "gradlePlugins-agp" }
