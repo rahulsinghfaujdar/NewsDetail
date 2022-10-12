@@ -48,7 +48,9 @@ dependencies {
     //Glide
     implementation(libs.glide)
     annotationProcessor(libs.glide.compile)
-
+    
+    //Network
+    implementation project(":network")
 }
 
 secrets {
