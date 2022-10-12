@@ -2,8 +2,6 @@
 
 ## News Update is provide latest news feeds list and notification.
 
-![Workflow result](https://github.com/rahulsinghfaujdar/NewsDetail/workflows/CI/badge.svg)
-
 ### Architecture and Tech-stack
 * Target SDK Version - 29
 * Minimum SDK version - 16
@@ -36,6 +34,6 @@
 | `url` | `String` | **(required)**  News Browsable Link
 
 ### Screenshots
-🌞 Light Mode | 🌚 Dark Mode | Search
+🌞 Light Mode | 🌚 Dark Mode | 🔎 Search
 --- | --- | --- |
 <img src="https://github.com/rahulsinghfaujdar/NewsDetail/blob/main/screenshots/Screenshot_20221006_130541.png" width="100%"></img> | <img src="https://github.com/rahulsinghfaujdar/NewsDetail/blob/main/screenshots/Screenshot_20221006_130620.png" width="100%"></img> | <img src="https://github.com/rahulsinghfaujdar/NewsDetail/blob/main/screenshots/Screenshot_20221006_130653.png" width="100%"></img>
