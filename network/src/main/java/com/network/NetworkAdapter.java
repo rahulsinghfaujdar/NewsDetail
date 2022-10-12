@@ -17,7 +17,7 @@ import javax.net.ssl.HttpsURLConnection;
  */
 public class NetworkAdapter {
 
-    public static final String USER_AGENT = BuildConfig.LIBRARY_PACKAGE_NAME + "/Ver-" + BuildConfig.BUILD_TYPE + "/";
+    public static final String USER_AGENT = /*BuildConfig.APPLICATION_ID +*/ "/Ver-" + BuildConfig.BUILD_TYPE + "/";
     private String ApiBaseUrl;
     private String Route;
     private String ApiEndPoint;
