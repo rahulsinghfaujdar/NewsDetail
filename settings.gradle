@@ -11,6 +11,12 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
     }
+    versionCatalogs {
+        // declares an additional catalog
+        customodules {
+            from(files('gradle/module.versions.toml'))
+        }
+    }
 }
 
 //enable TOML require gradle distributionUrl at least gradle-7.4.2-bin.zip
