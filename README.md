@@ -6,6 +6,8 @@
 * Target SDK Version - 29
 * Minimum SDK version - 16
 * Built on MVP architecture pattern
+* Multi Module (Network sepreate Module)
+* Dependancy sharing between modules
 * TOML + Gradle version catalogs [TOML](https://funkymuse.dev/posts/toml-gradle)
 * Google Secrets Gradle plugin [Secrets](https://developers.google.com/maps/documentation/android-sdk/secrets-gradle-plugin)
 * Custom [NetworkUtility](https://github.com/rahulsinghfaujdar/NewsDetail/blob/main/app/src/main/java/com/newsdetail/network/NetworkAdapter.java)
