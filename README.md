@@ -1,4 +1,4 @@
-# <h4>News Update</h4>
+# News Update
 
 ## News Update is provide latest news feeds list and notification.
 
