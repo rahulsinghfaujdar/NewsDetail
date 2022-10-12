@@ -34,6 +34,6 @@
 | `url` | `String` | **(required)**  News Browsable Link
 
 ### Screenshots
-🌞 Light Mode | 🌚 Dark Mode | Details
+🌞 Light Mode | 🌚 Dark Mode | Search
 --- | --- | --- |
-<img src="https://github.com/rahulsinghfaujdar/NewsDetail/blob/main/screenshots/Screenshot_20221006_130541.png" width="25%"></img> | <img src="https://github.com/rahulsinghfaujdar/NewsDetail/blob/main/screenshots/Screenshot_20221006_130620.png" width="25%"></img> | <img src="https://github.com/rahulsinghfaujdar/NewsDetail/blob/main/screenshots/Screenshot_20221006_130653.png" width="25%"></img>
+<img src="https://github.com/rahulsinghfaujdar/NewsDetail/blob/main/screenshots/Screenshot_20221006_130541.png" width="100%"></img> | <img src="https://github.com/rahulsinghfaujdar/NewsDetail/blob/main/screenshots/Screenshot_20221006_130620.png" width="100%"></img> | <img src="https://github.com/rahulsinghfaujdar/NewsDetail/blob/main/screenshots/Screenshot_20221006_130653.png" width="100%"></img>
