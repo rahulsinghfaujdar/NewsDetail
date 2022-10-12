@@ -2,6 +2,8 @@
 
 ## News Update is provide latest news feeds list and notification.
 
+![Workflow result](https://github.com/rahulsinghfaujdar/NewsDetail/workflows/CI/badge.svg)
+
 ### Architecture and Tech-stack
 * Target SDK Version - 29
 * Minimum SDK version - 16
