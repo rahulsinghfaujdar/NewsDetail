@@ -37,3 +37,6 @@
 🌞 Light Mode | 🌚 Dark Mode | 🔎 Search
 --- | --- | --- |
 <img src="https://github.com/rahulsinghfaujdar/NewsDetail/blob/main/screenshots/Screenshot_20221006_130541.png" width="100%"></img> | <img src="https://github.com/rahulsinghfaujdar/NewsDetail/blob/main/screenshots/Screenshot_20221006_130620.png" width="100%"></img> | <img src="https://github.com/rahulsinghfaujdar/NewsDetail/blob/main/screenshots/Screenshot_20221006_130653.png" width="100%"></img>
+
+## Find this repository useful? :heart:
+Support it by joining __[stargazers](https://github.com/rahulsinghfaujdar/NewsDetail/stargazers)__ for this repository. ⭐
