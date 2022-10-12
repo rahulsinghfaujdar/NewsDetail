@@ -10,7 +10,7 @@
 * Dependancy sharing between modules
 * TOML + Gradle version catalogs [TOML](https://funkymuse.dev/posts/toml-gradle)
 * Google Secrets Gradle plugin [Secrets](https://developers.google.com/maps/documentation/android-sdk/secrets-gradle-plugin)
-* Custom [NetworkUtility](https://github.com/rahulsinghfaujdar/NewsDetail/blob/main/app/src/main/java/com/newsdetail/network/NetworkAdapter.java)
+* Custom [NetworkUtility]([https://github.com/rahulsinghfaujdar/NewsDetail/blob/main/app/src/main/java/com/newsdetail/network/NetworkAdapter.java](https://github.com/rahulsinghfaujdar/NewsDetail/blob/main/network/src/main/java/com/network/NetworkAdapter.java))
 * Not used OkHttp/Gson/Retrofit/Volly
 * Uses [Glide](https://github.com/bumptech/glide) for image loading.
 * Uses Recycler View & Card View
